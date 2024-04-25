@@ -15,7 +15,7 @@ from docx import Document
 
 
 def gemini(text,query):
-    os.environ['GOOGLE_API_KEY'] = "AIzaSyBRpB3U0FbKL_m10g-q1e1LBuPVZBkG7dc"
+    os.environ['GOOGLE_API_KEY'] = "Your API Key"
     genai.configure(api_key = os.environ['GOOGLE_API_KEY'])
     llm = ChatGoogleGenerativeAI(model="gemini-pro")
     def Generate_Response(text, query):
